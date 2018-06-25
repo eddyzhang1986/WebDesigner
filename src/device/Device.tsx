@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./iphone/style.css";
+import "./iphone/iphone.css";
 
 export class Device extends React.Component {
   render() {

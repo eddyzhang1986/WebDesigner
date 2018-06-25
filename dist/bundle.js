@@ -71,10 +71,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/index.js!./src/device/iphone/style.css":
-/*!***************************************************************!*\
-  !*** ./node_modules/css-loader!./src/device/iphone/style.css ***!
-  \***************************************************************/
+/***/ "./node_modules/css-loader/index.js!./src/device/iphone/iphone.css":
+/*!****************************************************************!*\
+  !*** ./node_modules/css-loader!./src/device/iphone/iphone.css ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -83,7 +83,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body {\r\n  background-color: #2c2c32;\r\n}\r\n.ms-content .c-view {\r\n  padding-left: 24px;\r\n  text-align: left;\r\n  color: white;\r\n}\r\n.nav-float {\r\n  z-index: 9990;\r\n  position: fixed;\r\n  top: 150px;\r\n  right: 6%;\r\n  width: 150px;\r\n  text-align: center;\r\n  border: 1px solid darkgray;\r\n  border-radius: 6px;\r\n  background-color: #2c2c32;\r\n}\r\n.nav-float a {\r\n  display: block;\r\n  padding: 10px;\r\n  border-bottom: 1px solid darkgray;\r\n  color: white;\r\n}\r\n.nav-float a:last-child {\r\n  border: 0;\r\n}\r\n.nav-float a:hover {\r\n  color: #53d9ef;\r\n}\r\n.nav-title {\r\n  padding: 76px 0 15px 0;\r\n  font-size: 20px;\r\n  color: #53d9ef;\r\n}\r\n.demo-li {\r\n  display: inline-block;\r\n  width: 40%;\r\n  margin: 30px 4%;\r\n  text-align: center;\r\n  vertical-align: top;\r\n  cursor: pointer;\r\n  color: white;\r\n}\r\n.iPhone {\r\n  position: relative;\r\n  display: inline-block;\r\n  border: 1px solid white;\r\n  border-radius: 40px;\r\n  padding: 70px 10px;\r\n  margin-left: 20px;\r\n}\r\n.iPhone img {\r\n  width: 320px;\r\n  height: 562px;\r\n}\r\n.iPhone:before {\r\n  position: absolute;\r\n  top: 30px;\r\n  left: 50%;\r\n  content: \"\";\r\n  display: inline-block;\r\n  width: 80px;\r\n  height: 8px;\r\n  margin-left: -40px;\r\n  border: 1px solid white;\r\n  border-radius: 8px;\r\n}\r\n.iPhone:after {\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 15px;\r\n  content: \"\";\r\n  display: block;\r\n  width: 40px;\r\n  height: 40px;\r\n  margin-left: -20px;\r\n  border: 1px solid white;\r\n  border-radius: 50%;\r\n}\r\n.demo-li:hover .iPhone,\r\n.demo-li:hover .iPhone:before,\r\n.demo-li:hover .iPhone:after {\r\n  border: 1px solid #53d9ef;\r\n}\r\n.demo-li:hover {\r\n  color: #53d9ef;\r\n}\r\n.demo-title {\r\n  font-size: 18px;\r\n  padding: 10px;\r\n}\r\n.btn-line {\r\n  display: inline-block;\r\n  font-size: 14px;\r\n  margin: 14px;\r\n  padding: 8px 30px;\r\n  border: 1px solid #53d9ef;\r\n  border-radius: 20px;\r\n  color: #53d9ef;\r\n  cursor: pointer;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  outline: 0;\r\n  box-sizing: border-box;\r\n}\r\nbody {\r\n  font-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\r\n}\r\nul {\r\n  list-style-type: none;\r\n}\r\na {\r\n  text-decoration: none;\r\n}\r\na:hover {\r\n  text-decoration: none;\r\n}\r\nimg {\r\n  vertical-align: bottom;\r\n}\r\na.green {\r\n  color: #53d9ef;\r\n}\r\na.green:hover {\r\n  color: #a6e22b;\r\n}\r\n.c-view {\r\n  width: 1100px;\r\n  margin: auto;\r\n}\r\n.pink {\r\n  color: #ea1c40;\r\n}\r\n.blue {\r\n  color: #a6e22b;\r\n}\r\n.green {\r\n  color: #53d9ef;\r\n}\r\n.gray {\r\n  color: gray;\r\n}\r\n.hide {\r\n  display: none;\r\n}\r\n.ms-header {\r\n  z-index: 9990;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 80px;\r\n  background-color: #2c2c32;\r\n}\r\n.ms-header .logo {\r\n  padding: 25px;\r\n  height: 80px;\r\n  cursor: pointer;\r\n}\r\n.ms-header .nav {\r\n  float: right;\r\n}\r\n.ms-header .nav a {\r\n  display: inline-block;\r\n  font-size: 18px;\r\n  margin: 8px 16px;\r\n  padding: 20px;\r\n  cursor: pointer;\r\n  color: darkgray;\r\n}\r\n.ms-header .nav a:hover,\r\n.ms-header .nav a.active {\r\n  color: white;\r\n}\r\n.ms-header ~ .ms-content {\r\n  padding-top: 80px;\r\n}\r\n.ms-footer {\r\n  padding: 50px;\r\n  font-size: 12px;\r\n  text-align: center;\r\n  background-color: #393d49;\r\n  color: gray;\r\n}\r\n::-webkit-scrollbar-track {\r\n  background-color: transparent;\r\n}\r\n::-webkit-scrollbar {\r\n  width: 6px;\r\n}\r\n::-webkit-scrollbar-thumb {\r\n  border-radius: 6px;\r\n  background-color: #ccc;\r\n}\r\n::-webkit-scrollbar-thumb:hover {\r\n  background-color: #aaa;\r\n}\r\n.qq_team {\r\n  z-index: 999999;\r\n  position: fixed;\r\n  top: 32px;\r\n  right: 64px;\r\n}\r\n", ""]);
+exports.push([module.i, ".iPhone {\r\n  position: relative;\r\n  display: inline-block;\r\n  border: 1px solid white;\r\n  border-radius: 40px;\r\n  padding: 70px 10px;\r\n  margin-left: 20px;\r\n}\r\n.iPhone img {\r\n  width: 320px;\r\n  height: 562px;\r\n}\r\n.iPhone:before {\r\n  position: absolute;\r\n  top: 30px;\r\n  left: 50%;\r\n  content: \"\";\r\n  display: inline-block;\r\n  width: 80px;\r\n  height: 8px;\r\n  margin-left: -40px;\r\n  border: 1px solid white;\r\n  border-radius: 8px;\r\n}\r\n.iPhone:after {\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 15px;\r\n  content: \"\";\r\n  display: block;\r\n  width: 40px;\r\n  height: 40px;\r\n  margin-left: -20px;\r\n  border: 1px solid white;\r\n  border-radius: 50%;\r\n}\r\n.demo-li:hover .iPhone,\r\n.demo-li:hover .iPhone:before,\r\n.demo-li:hover .iPhone:after {\r\n  border: 1px solid #53d9ef;\r\n}\r\n.demo-li:hover {\r\n  color: #53d9ef;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./src/index.css":
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader!./src/index.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  outline: 0;\r\n  box-sizing: border-box;\r\n}\r\nbody {\r\n  background-color: #2c2c32;\r\n  font-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\r\n}\r\nul {\r\n  list-style-type: none;\r\n}\r\n", ""]);
 
 // exports
 
@@ -689,7 +708,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
-__webpack_require__(/*! ./iphone/style.css */ "./src/device/iphone/style.css");
+__webpack_require__(/*! ./iphone/iphone.css */ "./src/device/iphone/iphone.css");
 var Device = /** @class */ (function (_super) {
     __extends(Device, _super);
     function Device() {
@@ -709,15 +728,15 @@ exports.Device = Device;
 
 /***/ }),
 
-/***/ "./src/device/iphone/style.css":
-/*!*************************************!*\
-  !*** ./src/device/iphone/style.css ***!
-  \*************************************/
+/***/ "./src/device/iphone/iphone.css":
+/*!**************************************!*\
+  !*** ./src/device/iphone/iphone.css ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader!./style.css */ "./node_modules/css-loader/index.js!./src/device/iphone/style.css");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader!./iphone.css */ "./node_modules/css-loader/index.js!./src/device/iphone/iphone.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -739,6 +758,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader!./index.css */ "./node_modules/css-loader/index.js!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -752,6 +801,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
 var ReactDOM = __webpack_require__(/*! react-dom */ "react-dom");
 var Device_1 = __webpack_require__(/*! ./device/Device */ "./src/device/Device.tsx");
+__webpack_require__(/*! ./index.css */ "./src/index.css");
 ReactDOM.render(React.createElement(Device_1.Device, null), document.getElementById("container"));
 
 
