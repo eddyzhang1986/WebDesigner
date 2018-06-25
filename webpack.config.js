@@ -1,7 +1,10 @@
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: [
+    "webpack-dev-server/client?http://localhost:9000/",
+    "./src/index.tsx"
+  ],
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist"
