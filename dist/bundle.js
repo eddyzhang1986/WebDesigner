@@ -92,18 +92,30 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
+var data = __webpack_require__(/*! ../data/schema.json */ "./src/data/schema.json");
 var MObject = /** @class */ (function (_super) {
     __extends(MObject, _super);
     function MObject() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     MObject.prototype.render = function () {
-        return React.createElement("div", null, "xxxx");
+        return React.createElement("div", null, data.xType);
     };
     return MObject;
 }(React.Component));
 exports.MObject = MObject;
 
+
+/***/ }),
+
+/***/ "./src/data/schema.json":
+/*!******************************!*\
+  !*** ./src/data/schema.json ***!
+  \******************************/
+/*! exports provided: xType, default */
+/***/ (function(module) {
+
+module.exports = {"xType":"testxxx"};
 
 /***/ }),
 
