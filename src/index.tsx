@@ -1,4 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { MObject } from "./components/MObject";
 
-ReactDOM.render(<div>test</div>, document.getElementById("container"));
+ReactDOM.render(<MObject />, document.getElementById("container"));
