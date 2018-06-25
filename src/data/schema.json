@@ -1,3 +1,5 @@
 {
-  "xType": "testxxx"
+  "title": "首页",
+  "xType": "list",
+  "items": []
 }
