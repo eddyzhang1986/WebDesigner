@@ -83,7 +83,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".iPhone {\r\n  position: relative;\r\n  display: inline-block;\r\n  border: 1px solid white;\r\n  border-radius: 40px;\r\n  padding: 70px 10px;\r\n  margin-left: 20px;\r\n}\r\n.iPhone img {\r\n  width: 320px;\r\n  height: 562px;\r\n}\r\n.iPhone:before {\r\n  position: absolute;\r\n  top: 30px;\r\n  left: 50%;\r\n  content: \"\";\r\n  display: inline-block;\r\n  width: 80px;\r\n  height: 8px;\r\n  margin-left: -40px;\r\n  border: 1px solid white;\r\n  border-radius: 8px;\r\n}\r\n.iPhone:after {\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 15px;\r\n  content: \"\";\r\n  display: block;\r\n  width: 40px;\r\n  height: 40px;\r\n  margin-left: -20px;\r\n  border: 1px solid white;\r\n  border-radius: 50%;\r\n}\r\n.demo-li:hover .iPhone,\r\n.demo-li:hover .iPhone:before,\r\n.demo-li:hover .iPhone:after {\r\n  border: 1px solid #53d9ef;\r\n}\r\n.demo-li:hover {\r\n  color: #53d9ef;\r\n}\r\n", ""]);
+exports.push([module.i, ".iPhone {\r\n  position: relative;\r\n  display: inline-block;\r\n  border: 1px solid white;\r\n  border-radius: 40px;\r\n  padding: 70px 10px;\r\n  margin-left: 20px;\r\n}\r\n.iPhoneContent {\r\n  width: 320px;\r\n  height: 562px;\r\n  background-color: white;\r\n}\r\n.iPhone:before {\r\n  position: absolute;\r\n  top: 30px;\r\n  left: 50%;\r\n  content: \"\";\r\n  display: inline-block;\r\n  width: 80px;\r\n  height: 8px;\r\n  margin-left: -40px;\r\n  border: 1px solid white;\r\n  border-radius: 8px;\r\n}\r\n.iPhone:after {\r\n  position: absolute;\r\n  left: 50%;\r\n  bottom: 15px;\r\n  content: \"\";\r\n  display: block;\r\n  width: 40px;\r\n  height: 40px;\r\n  margin-left: -20px;\r\n  border: 1px solid white;\r\n  border-radius: 50%;\r\n}\r\n.iPhoneLight:hover .iPhone,\r\n.iPhoneLight:hover .iPhone:before,\r\n.iPhoneLight:hover .iPhone:after {\r\n  border: 1px solid #53d9ef;\r\n}\r\n.iPhoneLight:hover {\r\n  color: #53d9ef;\r\n}\r\n", ""]);
 
 // exports
 
@@ -687,9 +687,9 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./src/device/Device.tsx":
+/***/ "./src/device/device.tsx":
 /*!*******************************!*\
-  !*** ./src/device/Device.tsx ***!
+  !*** ./src/device/device.tsx ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -708,18 +708,14 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
-__webpack_require__(/*! ./iphone/iphone.css */ "./src/device/iphone/iphone.css");
+var iphone_1 = __webpack_require__(/*! ./iphone/iphone */ "./src/device/iphone/iphone.tsx");
 var Device = /** @class */ (function (_super) {
     __extends(Device, _super);
     function Device() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Device.prototype.render = function () {
-        return (React.createElement("div", { className: "c-view" },
-            React.createElement("p", { className: "green" }, "Home Page Settings"),
-            React.createElement("a", { className: "demo-li" },
-                React.createElement("div", { className: "iPhone" },
-                    React.createElement("img", { src: "http://oux5x2xxe.bkt.clouddn.com/1508205320970list-products.gif" })))));
+        return React.createElement(iphone_1.IPhone, null, "test");
     };
     return Device;
 }(React.Component));
@@ -755,6 +751,46 @@ var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addS
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
+
+/***/ }),
+
+/***/ "./src/device/iphone/iphone.tsx":
+/*!**************************************!*\
+  !*** ./src/device/iphone/iphone.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(/*! react */ "react");
+__webpack_require__(/*! ./iphone.css */ "./src/device/iphone/iphone.css");
+var IPhone = /** @class */ (function (_super) {
+    __extends(IPhone, _super);
+    function IPhone() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    IPhone.prototype.render = function () {
+        var children = this.props.children;
+        return (React.createElement("a", { className: "iPhoneLight" },
+            React.createElement("div", { className: "iPhone" },
+                React.createElement("div", { className: "iPhoneContent" }, children))));
+    };
+    return IPhone;
+}(React.Component));
+exports.IPhone = IPhone;
+
 
 /***/ }),
 
@@ -800,9 +836,9 @@ if(false) {}
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
 var ReactDOM = __webpack_require__(/*! react-dom */ "react-dom");
-var Device_1 = __webpack_require__(/*! ./device/Device */ "./src/device/Device.tsx");
+var device_1 = __webpack_require__(/*! ./device/device */ "./src/device/device.tsx");
 __webpack_require__(/*! ./index.css */ "./src/index.css");
-ReactDOM.render(React.createElement(Device_1.Device, null), document.getElementById("container"));
+ReactDOM.render(React.createElement(device_1.Device, null), document.getElementById("container"));
 
 
 /***/ }),
