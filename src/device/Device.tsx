@@ -3,6 +3,6 @@ import { IPhone } from "./iphone/iphone";
 
 export class Device extends React.Component {
   render() {
-    return <IPhone>test</IPhone>;
+    return <IPhone>test111</IPhone>;
   }
 }
