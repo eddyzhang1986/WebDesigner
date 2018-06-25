@@ -1,4 +1,6 @@
-//const webpack = require("webpack");
+const webpack = require("webpack");
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx", //"webpack-dev-server/client?http://localhost:9000/",
@@ -10,7 +12,7 @@ module.exports = {
 
   devServer: {
     contentBase: __dirname,
-    compress: true,
+    compress: false,
     port: 9000,
     hot: true,
     open: true
@@ -37,7 +39,17 @@ module.exports = {
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   },
-
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "MMA Web Designer",
+      inject: "body",
+      filename: "index.html",
+      template: path.resolve(__dirname, "index.html")
+    })
+    // new webpack.optimize.CommonsChunkPlugin({
+    //     names: ["vendor", "manifest"]
+    // })
+  ],
   //plugins: [new webpack.HotModuleReplacementPlugin()],
   // When importing a module whose path matches one of the following, just
   // assume a corresponding global variable exists and use that instead.
