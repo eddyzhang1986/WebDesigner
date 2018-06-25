@@ -91,7 +91,7 @@
         {
           "xType": "line",
           "direct": "vertical",
-          "items": []
+          "items": [{}]
         }
       ]
     }
