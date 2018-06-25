@@ -11,3 +11,4 @@ a home page designer for mobile app of maomaoai
 
 ## JSON Format ##
 
+[https://eddyzhang1986.github.io/WebDesigner/#format](https://eddyzhang1986.github.io/WebDesigner/#format)
