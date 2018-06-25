@@ -29,6 +29,7 @@
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.0",
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "react-codemirror": "^1.0.0",
     "source-map-loader": "^0.2.3",
