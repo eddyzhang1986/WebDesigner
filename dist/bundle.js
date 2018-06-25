@@ -71,10 +71,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/components/MObject.tsx":
-/*!************************************!*\
-  !*** ./src/components/MObject.tsx ***!
-  \************************************/
+/***/ "./src/device/Device.tsx":
+/*!*******************************!*\
+  !*** ./src/device/Device.tsx ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -92,30 +92,18 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
-var data = __webpack_require__(/*! ../data/schema.json */ "./src/data/schema.json");
-var MObject = /** @class */ (function (_super) {
-    __extends(MObject, _super);
-    function MObject() {
+var Device = /** @class */ (function (_super) {
+    __extends(Device, _super);
+    function Device() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    MObject.prototype.render = function () {
-        return React.createElement("div", null, data.xType);
+    Device.prototype.render = function () {
+        return React.createElement("div", { className: "iphone" }, "iphone\u6A21\u62DF\u5668");
     };
-    return MObject;
+    return Device;
 }(React.Component));
-exports.MObject = MObject;
+exports.Device = Device;
 
-
-/***/ }),
-
-/***/ "./src/data/schema.json":
-/*!******************************!*\
-  !*** ./src/data/schema.json ***!
-  \******************************/
-/*! exports provided: xType, default */
-/***/ (function(module) {
-
-module.exports = {"xType":"testxxx"};
 
 /***/ }),
 
@@ -131,8 +119,8 @@ module.exports = {"xType":"testxxx"};
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(/*! react */ "react");
 var ReactDOM = __webpack_require__(/*! react-dom */ "react-dom");
-var MObject_1 = __webpack_require__(/*! ./components/MObject */ "./src/components/MObject.tsx");
-ReactDOM.render(React.createElement(MObject_1.MObject, null), document.getElementById("container"));
+var Device_1 = __webpack_require__(/*! ./device/Device */ "./src/device/Device.tsx");
+ReactDOM.render(React.createElement(Device_1.Device, null), document.getElementById("container"));
 
 
 /***/ }),

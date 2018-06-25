@@ -1,5 +1,5 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { MObject } from "./components/MObject";
+import { Device } from "./device/Device";
 
-ReactDOM.render(<MObject />, document.getElementById("container"));
+ReactDOM.render(<Device />, document.getElementById("container"));
