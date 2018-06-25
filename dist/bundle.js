@@ -98,7 +98,7 @@ var Device = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Device.prototype.render = function () {
-        return React.createElement("div", { className: "iphone" }, "iphone\u6A21\u62DF\u5668");
+        return React.createElement("div", { className: "iphone" }, "iphone\u6A21\u62DF\u566811ddd1");
     };
     return Device;
 }(React.Component));
