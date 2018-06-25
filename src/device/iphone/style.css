@@ -1,0 +1,209 @@
+body {
+  background-color: #2c2c32;
+}
+.ms-content .c-view {
+  padding-left: 24px;
+  text-align: left;
+  color: white;
+}
+.nav-float {
+  z-index: 9990;
+  position: fixed;
+  top: 150px;
+  right: 6%;
+  width: 150px;
+  text-align: center;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  background-color: #2c2c32;
+}
+.nav-float a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid darkgray;
+  color: white;
+}
+.nav-float a:last-child {
+  border: 0;
+}
+.nav-float a:hover {
+  color: #53d9ef;
+}
+.nav-title {
+  padding: 76px 0 15px 0;
+  font-size: 20px;
+  color: #53d9ef;
+}
+.demo-li {
+  display: inline-block;
+  width: 40%;
+  margin: 30px 4%;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  color: white;
+}
+.iPhone {
+  position: relative;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 70px 10px;
+  margin-left: 20px;
+}
+.iPhone img {
+  width: 320px;
+  height: 562px;
+}
+.iPhone:before {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 8px;
+  margin-left: -40px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.iPhone:after {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.demo-li:hover .iPhone,
+.demo-li:hover .iPhone:before,
+.demo-li:hover .iPhone:after {
+  border: 1px solid #53d9ef;
+}
+.demo-li:hover {
+  color: #53d9ef;
+}
+.demo-title {
+  font-size: 18px;
+  padding: 10px;
+}
+.btn-line {
+  display: inline-block;
+  font-size: 14px;
+  margin: 14px;
+  padding: 8px 30px;
+  border: 1px solid #53d9ef;
+  border-radius: 20px;
+  color: #53d9ef;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "微软雅黑";
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+}
+a.green {
+  color: #53d9ef;
+}
+a.green:hover {
+  color: #a6e22b;
+}
+.c-view {
+  width: 1100px;
+  margin: auto;
+}
+.pink {
+  color: #ea1c40;
+}
+.blue {
+  color: #a6e22b;
+}
+.green {
+  color: #53d9ef;
+}
+.gray {
+  color: gray;
+}
+.hide {
+  display: none;
+}
+.ms-header {
+  z-index: 9990;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #2c2c32;
+}
+.ms-header .logo {
+  padding: 25px;
+  height: 80px;
+  cursor: pointer;
+}
+.ms-header .nav {
+  float: right;
+}
+.ms-header .nav a {
+  display: inline-block;
+  font-size: 18px;
+  margin: 8px 16px;
+  padding: 20px;
+  cursor: pointer;
+  color: darkgray;
+}
+.ms-header .nav a:hover,
+.ms-header .nav a.active {
+  color: white;
+}
+.ms-header ~ .ms-content {
+  padding-top: 80px;
+}
+.ms-footer {
+  padding: 50px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #393d49;
+  color: gray;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+.qq_team {
+  z-index: 999999;
+  position: fixed;
+  top: 32px;
+  right: 64px;
+}
