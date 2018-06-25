@@ -91,7 +91,85 @@
         {
           "xType": "line",
           "direct": "vertical",
-          "items": [{}]
+          "items": [
+            {
+              "xType": "goods",
+              "backgroud": "image-url",
+              "title": "分类直达",
+              "description": "分类直达",
+              "items": {
+                "xType": "grid",
+                "items": [
+                  {
+                    "xType": "row",
+                    "num": 2,
+                    "items": [
+                      {
+                        "xType": "good",
+                        "title": "宝宝日用",
+                        "image": "image-url1",
+                        "target": "link-url1"
+                      },
+                      {
+                        "xType": "good",
+                        "title": "辣妈专区",
+                        "image": "image-url2",
+                        "target": "link-url2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "xType": "bottom",
+      "items": [
+        {
+          "xType": "grid",
+          "items": [
+            {
+              "xType": "row",
+              "items": [
+                {
+                  "xType": "bottomGood",
+                  "description": "【自营】xxxx",
+                  "money1": "11",
+                  "money2": "22",
+                  "image": "image-url1"
+                },
+                {
+                  "xType": "bottomGood",
+                  "description": "【自营】xxxx",
+                  "money1": "11",
+                  "money2": "22",
+                  "image": "image-url2"
+                }
+              ]
+            },
+            {
+              "xType": "row",
+              "items": [
+                {
+                  "xType": "bottomGood",
+                  "description": "【自营】xxxx",
+                  "money1": "11",
+                  "money2": "22",
+                  "image": "image-url3"
+                },
+                {
+                  "xType": "bottomGood",
+                  "description": "【自营】xxxx",
+                  "money1": "11",
+                  "money2": "22",
+                  "image": "image-url4"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
