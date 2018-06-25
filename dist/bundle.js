@@ -19884,7 +19884,7 @@ var ReactRouter = __webpack_require__(/*! react-router-dom */ "./node_modules/re
 var Router = ReactRouter.HashRouter, Route = ReactRouter.Route, Link = ReactRouter.Link;
 var Json = __webpack_require__(/*! ./data/schema.json */ "./src/data/schema.json");
 var Home = function () {
-    return React.createElement(device_1.Device, null, "test");
+    return React.createElement(device_1.Device, null, "test111");
 };
 var Format = function () {
     return React.createElement(editor_1.Editor, { onChange: function () { }, value: JSON.stringify(Json, null, 2) });

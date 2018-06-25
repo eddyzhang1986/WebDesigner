@@ -9,7 +9,7 @@ const { HashRouter: Router, Route, Link } = ReactRouter;
 const Json = require("./data/schema.json");
 
 const Home = () => {
-  return <Device>test</Device>;
+  return <Device>test111</Device>;
 };
 
 const Format = () => {
