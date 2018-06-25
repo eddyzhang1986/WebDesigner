@@ -1,0 +1,30 @@
+{
+  "name": "webdesigner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyzhang1986/WebDesigner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eddyzhang1986/WebDesigner/issues"
+  },
+  "homepage": "https://github.com/eddyzhang1986/WebDesigner#readme",
+  "dependencies": {
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.2"
+  }
+}
