@@ -1,5 +1,99 @@
 {
   "title": "首页",
-  "xType": "list",
-  "items": []
+  "xType": "line",
+  "direct": "vertical",
+  "items": [
+    {
+      "xType": "banner",
+      "background": "image-url",
+      "items": [
+        {
+          "xType": "line",
+          "direct": "horizontal",
+          "items": [
+            {
+              "xType": "dropdown",
+              "width": "**px"
+            },
+            {
+              "xType": "input",
+              "width": "**px"
+            },
+            {
+              "xType": "qrCode",
+              "width": "**px"
+            }
+          ]
+        },
+        {
+          "xType": "swiper",
+          "items": [
+            {
+              "xType": "image",
+              "url": "image-url1"
+            },
+            {
+              "xType": "image",
+              "url": "image-url2"
+            },
+            {
+              "xType": "image",
+              "url": "image-url3"
+            }
+          ]
+        },
+        {
+          "xType": "line",
+          "direct": "horizontal",
+          "items": [
+            {
+              "xType": "ball",
+              "title": "同城服务",
+              "image": "image-url1",
+              "description": "同城服务"
+            },
+            {
+              "xType": "ball",
+              "title": "0元试用",
+              "image": "image-url2",
+              "description": "0元试用"
+            },
+            {
+              "xType": "ball",
+              "title": "全球购",
+              "image": "image-url3",
+              "description": "全球购"
+            },
+            {
+              "xType": "ball",
+              "title": "秒杀专场",
+              "image": "image-url4",
+              "description": "秒杀专场"
+            },
+            {
+              "xType": "ball",
+              "title": "身边门店",
+              "image": "image-url5",
+              "description": "身边门店"
+            }
+          ]
+        },
+        {
+          "xType": "image",
+          "url": "image-url",
+          "description": "首页头部下方图片"
+        }
+      ]
+    },
+    {
+      "xType": "body",
+      "items": [
+        {
+          "xType": "line",
+          "direct": "vertical",
+          "items": []
+        }
+      ]
+    }
+  ]
 }
