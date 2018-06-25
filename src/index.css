@@ -12,3 +12,7 @@ body {
 ul {
   list-style-type: none;
 }
+
+.CodeMirror {
+  height: 100%;
+}

@@ -11911,7 +11911,7 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/li
 
 
 // module
-exports.push([module.i, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  outline: 0;\r\n  box-sizing: border-box;\r\n}\r\nbody {\r\n  background-color: #2c2c32;\r\n  font-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\r\n}\r\nul {\r\n  list-style-type: none;\r\n}\r\n", ""]);
+exports.push([module.i, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  outline: 0;\r\n  box-sizing: border-box;\r\n}\r\nbody {\r\n  background-color: #2c2c32;\r\n  font-family: \"\\5FAE\\8F6F\\96C5\\9ED1\";\r\n}\r\nul {\r\n  list-style-type: none;\r\n}\r\n\r\n.CodeMirror {\r\n  height: 100%;\r\n}\r\n", ""]);
 
 // exports
 
