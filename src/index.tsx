@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import { Device } from "./device/device";
 import { Editor } from "./components/editor";
 import { Navigation } from "./components/navigation";
+import { Prototype } from "./components/prototype/Prototype";
 
 import "./index.css";
 const ReactRouter = require("react-router-dom");
@@ -11,11 +12,7 @@ const { HashRouter: Router, Route } = ReactRouter;
 const Json = require("./data/schema.json");
 
 const Home = () => {
-  return (
-    <div>
-      <Device />
-    </div>
-  );
+  return <Device />;
 };
 
 const Format = () => {
@@ -28,7 +25,7 @@ ReactDOM.render(
       <Navigation />
       <Route exact path="/" component={Home} />
       <Route path="/format" component={Format} />
-      <Route path="/prototype" component={Format} />
+      <Route path="/prototype" component={Prototype} />
     </div>
   </Router>,
   document.getElementById("container")
