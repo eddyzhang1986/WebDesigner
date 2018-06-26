@@ -13,7 +13,11 @@ const { HashRouter: Router, Route } = ReactRouter;
 const Json = require("./data/schema.json");
 
 const Home = () => {
-  return <Device />;
+  return (
+    <div style={{ marginLeft: "20px" }}>
+      <Device />
+    </div>
+  );
 };
 
 const Format = () => {
