@@ -3,6 +3,6 @@ const ReactRouter = require("react-router-dom");
 
 export class Prototype extends React.Component {
   render() {
-    return <div>Prototype</div>;
+    return <div style={{ color: "white" }}>Prototype</div>;
   }
 }
