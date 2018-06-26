@@ -5,6 +5,7 @@ import { Editor } from "./components/editor";
 import { Navigation } from "./components/navigation";
 import { Prototype } from "./components/prototype/Prototype";
 
+import "./global.css";
 import "./index.css";
 const ReactRouter = require("react-router-dom");
 const { HashRouter: Router, Route } = ReactRouter;
