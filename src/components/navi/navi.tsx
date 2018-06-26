@@ -10,19 +10,13 @@ export class Navi extends React.Component {
       <div {...style} className="navi">
         <ul>
           <li>
-            <Link to="/">
-              <span className="green">Home</span>
-            </Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/format">
-              <span className="green">Format</span>
-            </Link>
+            <Link to="/format">Format</Link>
           </li>
           <li>
-            <Link to="/prototype">
-              <span className="green">Prototype</span>
-            </Link>
+            <Link to="/prototype">Prototype</Link>
           </li>
         </ul>
       </div>

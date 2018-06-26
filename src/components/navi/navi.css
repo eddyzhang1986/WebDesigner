@@ -8,3 +8,11 @@
   line-height: 30px;
   width: 60px;
 }
+
+.navi a,
+.navi a :link,
+.navi a :visited,
+.navi a :hover,
+.navi a :active {
+  color: #53d9ef;
+}

@@ -15,10 +15,3 @@ ul {
 .green {
   color: #53d9ef;
 }
-
-a.green :link,
-a.green :visited,
-a.green :hover,
-a.green :active {
-  color: #53d9ef;
-}
