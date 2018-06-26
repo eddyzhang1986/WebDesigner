@@ -1,0 +1,10 @@
+.navi ul {
+  overflow: hidden;
+  zoom: 1;
+}
+.navi ul li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 60px;
+}

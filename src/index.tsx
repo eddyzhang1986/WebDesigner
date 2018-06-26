@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Device } from "./device/device";
 import { Editor } from "./components/editor";
-import { Navigation } from "./components/navigation";
+import { Navi } from "./components/navi/navi";
 import { Prototype } from "./components/prototype/Prototype";
 
 import "./global.css";
@@ -23,7 +23,7 @@ const Format = () => {
 ReactDOM.render(
   <Router>
     <div>
-      <Navigation />
+      <Navi />
       <Route exact path="/" component={Home} />
       <Route path="/format" component={Format} />
       <Route path="/prototype" component={Prototype} />

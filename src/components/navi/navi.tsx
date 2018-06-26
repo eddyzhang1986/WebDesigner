@@ -1,12 +1,13 @@
 import * as React from "react";
 const ReactRouter = require("react-router-dom");
 const { Link } = ReactRouter;
+import "./navi.css";
 
-export class Navigation extends React.Component {
+export class Navi extends React.Component {
   render() {
     const style = { style: { display: "inline" } };
     return (
-      <div {...style}>
+      <div {...style} className="navi">
         <ul>
           <li>
             <Link to="/">
