@@ -10,7 +10,14 @@
   width: 320px;
   height: 562px;
   background-color: white;
+  overflow-y: auto;
 }
+
+/* for Chrome */
+.iPhoneContent::-webkit-scrollbar {
+  display: none;
+}
+
 .iPhone:before {
   position: absolute;
   top: 30px;
