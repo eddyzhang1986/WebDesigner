@@ -10,7 +10,7 @@ import "./index.css";
 const ReactRouter = require("react-router-dom");
 const { HashRouter: Router, Route } = ReactRouter;
 
-const Json = require("./data/schema.json");
+const Json = require("./data/home.json");
 
 const Home = () => {
   return (
