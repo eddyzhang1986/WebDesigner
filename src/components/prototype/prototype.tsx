@@ -1,8 +1,12 @@
 import * as React from "react";
-const ReactRouter = require("react-router-dom");
+import { Row } from "react-bootstrap";
 
 export class Prototype extends React.Component {
   render() {
-    return <div style={{ color: "white" }}>Prototype</div>;
+    return (
+      <Row>
+        <div style={{ color: "white" }}>Prototype</div>
+      </Row>
+    );
   }
 }
