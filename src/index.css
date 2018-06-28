@@ -16,3 +16,21 @@ ul {
 .CodeMirror {
   height: 100%;
 }
+
+.rjsf legend {
+  font-size: 15.5px;
+}
+.rjsf .row {
+  height: 30px;
+  line-height: 30px;
+}
+.rjsf .form-control {
+  height: 30px;
+  line-height: 30px;
+}
+.rjsf .form-group {
+  border-width: 1px;
+  border-style: dotted;
+  border-color: #53d9ef;
+  padding: 8px;
+}
