@@ -84,7 +84,60 @@
           "title": "其他分类",
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object",
+            "properties": {
+              "class_id": {
+                "type": "string",
+                "title": "分类id"
+              },
+              "main_title": {
+                "type": "string",
+                "title": "分类标题"
+              },
+              "sub_title": {
+                "type": "string",
+                "title": "分类副标题"
+              },
+              "icon": {
+                "type": "string",
+                "title": "分类图标"
+              }
+            }
+          }
+        },
+        "modules": {
+          "title": "底部模块",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "module_background": {
+                "title": "底部模块背景",
+                "type": "string"
+              },
+              "class": {
+                "title": "底部模块分类",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "class_id": {
+                      "type": "string",
+                      "title": "分类id"
+                    },
+                    "title": {
+                      "type": "string",
+                      "title": "分类标题"
+                    },
+
+                    "icon": {
+                      "type": "string",
+                      "title": "分类图标"
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
