@@ -1,28 +1,6 @@
 {
   "banner": {
     "banner_background": "http://111.png",
-    "banner_operation_items": [
-      {
-        "title": "同城服务",
-        "image": "http://111.png"
-      },
-      {
-        "title": "0元试用",
-        "image": "http://222.png"
-      },
-      {
-        "title": "全球购",
-        "image": "http://222.png"
-      },
-      {
-        "title": "秒杀专场",
-        "image": "http://222.png"
-      },
-      {
-        "title": "身边门店",
-        "image": "http://222.png"
-      }
-    ],
     "banner_swiper": [
       {
         "title": "同城服务",
@@ -45,6 +23,33 @@
         "image": "http://222.png"
       }
     ],
+    "banner_operation_items": [
+      {
+        "title": "同城服务",
+        "image": "http://111.png",
+        "link": "http://www.baidu.com"
+      },
+      {
+        "title": "0元试用",
+        "image": "http://222.png",
+        "link": "http://www.baidu.com"
+      },
+      {
+        "title": "全球购",
+        "image": "http://222.png",
+        "link": "http://www.baidu.com"
+      },
+      {
+        "title": "秒杀专场",
+        "image": "http://222.png",
+        "link": "http://www.baidu.com"
+      },
+      {
+        "title": "身边门店",
+        "image": "http://222.png",
+        "link": "http://www.baidu.com"
+      }
+    ],
     "upgrade_shop_owner": "http://222.png"
   },
   "class": {
@@ -61,6 +66,106 @@
         "title": "宝宝日用",
         "icon": "http://111.png"
       }
+    ],
+    "other_class": [
+      {
+        "class_id": "3",
+        "main_title": "全球奶粉",
+        "sub_title": "满100减20元",
+        "icon": "http://111.png"
+      },
+      {
+        "class_id": "4",
+        "main_title": "辅食",
+        "sub_title": "满100减20元",
+        "icon": "http://111.png"
+      },
+      {
+        "class_id": "5",
+        "main_title": "零食",
+        "sub_title": "满100减20元",
+        "icon": "http://111.png"
+      },
+      {
+        "class_id": "6",
+        "main_title": "宝宝营养",
+        "sub_title": "满100减20元",
+        "icon": "http://111.png"
+      }
     ]
-  }
+  },
+  "modules": [
+    {
+      "module_background": "http://111.png",
+      "title_background": "http://111.png",
+      "main_title_prefix": "辅食营养",
+      "main_title_prefix_color": "#123123",
+      "main_title_suffix": "满100立减50元",
+      "main_title_suffix_color": "#asdasd",
+      "sub_title_background": "http://111.png",
+      "sub_title_image": "http://111.png",
+      "sub_title_prefix": "精选宝宝每一餐",
+      "sub_title_prefix_color": "#123123",
+      "sub_title_suffix": "最高99元选12件",
+      "sub_title_suffix_color": "#asdasd",
+      "class": [
+        {
+          "class_id": "7",
+          "title": "宝宝辅食",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "8",
+          "title": "宝宝喂养",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "9",
+          "title": "宝宝营养",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "10",
+          "title": "宝宝零食",
+          "icon": "http://111.png"
+        }
+      ]
+    },
+    {
+      "module_background": "http://111.png",
+      "title_background": "http://111.png",
+      "main_title_prefix": "辣妈专区",
+      "main_title_prefix_color": "#123123",
+      "main_title_suffix": "满100立减50元",
+      "main_title_suffix_color": "#asdasd",
+      "sub_title_background": "http://111.png",
+      "sub_title_image": "http://111.png",
+      "sub_title_prefix": "精选辣妈每一天",
+      "sub_title_prefix_color": "#123123",
+      "sub_title_suffix": "最高99元选12件",
+      "sub_title_suffix_color": "#asdasd",
+      "class": [
+        {
+          "class_id": "11",
+          "title": "产前必穿",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "12",
+          "title": "孕期营养",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "13",
+          "title": "待产护理",
+          "icon": "http://111.png"
+        },
+        {
+          "class_id": "14",
+          "title": "产后恢复",
+          "icon": "http://111.png"
+        }
+      ]
+    }
+  ]
 }
