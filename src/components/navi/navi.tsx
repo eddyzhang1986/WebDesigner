@@ -13,9 +13,6 @@ export class Navi extends React.Component {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/format">Format</Link>
-          </li>
-          <li>
             <Link to="/prototype">Prototype</Link>
           </li>
         </ul>
