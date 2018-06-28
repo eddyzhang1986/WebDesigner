@@ -17,8 +17,10 @@ ul {
   height: 600px;
 }
 
-.rjsf legend {
+.rjsf legend,
+.rjsf label {
   font-size: 15.5px;
+  font-weight: normal;
 }
 .rjsf .row {
   height: 30px;
@@ -36,4 +38,7 @@ ul {
 }
 .rjsf .field-string {
   border-width: 0px;
+}
+.rjsf .array-item-add button {
+  padding: 0px;
 }
