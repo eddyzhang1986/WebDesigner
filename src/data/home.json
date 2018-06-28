@@ -4,7 +4,29 @@
     "banner_operation_items": [
       {
         "title": "同城服务",
-        "icon": "http://111.png"
+        "image": "http://111.png"
+      },
+      {
+        "title": "0元试用",
+        "image": "http://222.png"
+      },
+      {
+        "title": "全球购",
+        "image": "http://222.png"
+      },
+      {
+        "title": "秒杀专场",
+        "image": "http://222.png"
+      },
+      {
+        "title": "身边门店",
+        "image": "http://222.png"
+      }
+    ],
+    "banner_swiper": [
+      {
+        "title": "同城服务",
+        "image": "http://111.png"
       },
       {
         "title": "0元试用",
