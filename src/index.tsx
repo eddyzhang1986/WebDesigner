@@ -10,8 +10,6 @@ import "./index.css";
 const ReactRouter = require("react-router-dom");
 const { HashRouter: Router, Route } = ReactRouter;
 
-const Json = require("./data/home.json");
-
 const Home = () => {
   return (
     <div style={{ marginLeft: "20px" }}>
@@ -20,16 +18,11 @@ const Home = () => {
   );
 };
 
-const Format = () => {
-  return <Editor onChange={() => {}} value={JSON.stringify(Json, null, 2)} />;
-};
-
 ReactDOM.render(
   <Router>
     <div>
       <Navi />
       <Route exact path="/" component={Home} />
-      <Route path="/format" component={Format} />
       <Route path="/prototype" component={Prototype} />
     </div>
   </Router>,
