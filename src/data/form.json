@@ -115,6 +115,51 @@
                 "title": "底部模块背景",
                 "type": "string"
               },
+
+              "title_background": {
+                "title": "标题背景",
+                "type": "string"
+              },
+              "main_title_prefix": {
+                "title": "标题背景",
+                "type": "string"
+              },
+              "main_title_prefix_color": {
+                "title": "主标题前缀颜色",
+                "type": "string"
+              },
+              "main_title_suffix": {
+                "title": "主标题后缀",
+                "type": "string"
+              },
+              "main_title_suffix_color": {
+                "title": "主标题后缀颜色",
+                "type": "string"
+              },
+              "sub_title_background": {
+                "title": "副标题背景",
+                "type": "string"
+              },
+              "sub_title_image": {
+                "title": "副标题图片",
+                "type": "string"
+              },
+              "sub_title_prefix": {
+                "title": "副标题前缀",
+                "type": "string"
+              },
+              "sub_title_prefix_color": {
+                "title": "副标题颜色",
+                "type": "string"
+              },
+              "sub_title_suffix": {
+                "title": "副标题后缀",
+                "type": "string"
+              },
+              "sub_title_suffix_color": {
+                "title": "副标题颜色",
+                "type": "string"
+              },
               "class": {
                 "title": "底部模块分类",
                 "type": "array",

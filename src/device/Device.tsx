@@ -18,7 +18,7 @@ export class Device extends React.Component {
             </IPhone>
           </Col>
           <Col md={8} xs={8} sm={8}>
-            <Form schema={schema} />
+            <Form schema={schema}>&nbsp;</Form>
           </Col>
         </Row>
         <Row>
