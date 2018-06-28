@@ -36,9 +36,14 @@ ul {
   border-color: #53d9ef;
   padding: 8px;
 }
+
 .rjsf .field-string {
   border-width: 0px;
 }
+
 .rjsf .array-item-add button {
+  padding: 0px;
+}
+.rjsf .array-item-toolbox button {
   padding: 0px;
 }
