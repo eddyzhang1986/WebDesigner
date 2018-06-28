@@ -5,25 +5,43 @@ import { Grid, Row, Col } from "react-bootstrap";
 import { Editor } from "../components/editor";
 
 const schema = require("../data/form.json");
-const home = require("../data/home.json");
+const home: any = require("../data/home.json");
 
-export class Device extends React.Component {
+export class Device extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = { formData: home };
+  }
   render() {
     return (
       <Grid>
         <Row>
+          <Col md={12} xs={12} sm={12}>
+            <Editor
+              onChange={() => {}}
+              value={JSON.stringify(this.state.formData, null, 2)}
+            />
+          </Col>
+        </Row>
+        <Row style={{ marginTop: "10px;" }}>
           <Col md={4} xs={4} sm={4}>
             <IPhone>
               <img width={320} src={require("../../resources/homepage.jpg")} />
             </IPhone>
           </Col>
           <Col md={8} xs={8} sm={8}>
-            <Form schema={schema}>&nbsp;</Form>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} xs={12} sm={12}>
-            <Editor onChange={() => {}} value={JSON.stringify(home, null, 2)} />
+            <Form
+              schema={schema}
+              formData={this.state.formData}
+              onChange={e => {
+                console.log(e);
+                this.setState({
+                  formData: e.formData
+                });
+              }}
+            >
+              &nbsp;
+            </Form>
           </Col>
         </Row>
       </Grid>
