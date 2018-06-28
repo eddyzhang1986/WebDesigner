@@ -34,3 +34,6 @@ ul {
   border-color: #53d9ef;
   padding: 8px;
 }
+.rjsf .field-string {
+  border-width: 0px;
+}
