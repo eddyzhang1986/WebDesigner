@@ -17,13 +17,26 @@ export class Device extends React.Component<any, any> {
       <Grid>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <Editor
-              onChange={() => {}}
-              value={JSON.stringify(this.state.formData, null, 2)}
-            />
+            <div
+              style={{
+                borderWidth: "1px",
+                borderStyle: "solid",
+                borderColor: "#53d9ef"
+              }}
+            >
+              <Editor
+                onChange={() => {}}
+                value={JSON.stringify(this.state.formData, null, 2)}
+              />
+            </div>
           </Col>
         </Row>
-        <Row style={{ marginTop: "10px;" }}>
+        <Row>
+          <Col md={12} xs={12} sm={12}>
+            &nbsp;
+          </Col>
+        </Row>
+        <Row>
           <Col md={4} xs={4} sm={4}>
             <IPhone>
               <img width={320} src={require("../../resources/homepage.jpg")} />
@@ -35,9 +48,7 @@ export class Device extends React.Component<any, any> {
               formData={this.state.formData}
               onChange={e => {
                 console.log(e);
-                this.setState({
-                  formData: e.formData
-                });
+                this.setState({ formData: e.formData });
               }}
             >
               &nbsp;
