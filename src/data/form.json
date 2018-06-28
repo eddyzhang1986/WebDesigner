@@ -58,25 +58,32 @@
       "type": "object",
       "title": "产品分类",
       "properties": {
+        "class_main_background": {
+          "type": "string",
+          "title": "大分类背景图"
+        },
+        "class_title_image": {
+          "type": "string",
+          "title": "分类标题图片"
+        },
         "top_class": {
-          "type": "object",
+          "type": "array",
           "title": "头部分类",
-          "properties": {
-            "class_id": {
-              "title": "分类id",
-              "type": "string"
-            },
-            "main_title": {
-              "title": "分类标题",
-              "type": "string"
-            },
-            "sub_title": {
-              "title": "分类说明",
-              "type": "string"
-            },
-            "icon": {
-              "title": "分类图标URL",
-              "type": "string"
+          "items": {
+            "type": "object",
+            "properties": {
+              "class_id": {
+                "title": "分类id",
+                "type": "string"
+              },
+              "title": {
+                "title": "分类标题",
+                "type": "string"
+              },
+              "icon": {
+                "title": "分类图标URL",
+                "type": "string"
+              }
             }
           }
         },
