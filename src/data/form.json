@@ -1,0 +1,93 @@
+{
+  "title": "首页设置",
+  "type": "object",
+  "properties": {
+    "banner": {
+      "title": "头部banner",
+      "type": "object",
+      "properties": {
+        "banner_background": {
+          "type": "string",
+          "title": "背景图片"
+        },
+        "banner_swiper": {
+          "type": "array",
+          "title": "轮播图片",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "title": "图片标题",
+                "type": "string"
+              },
+              "image": {
+                "title": "图片URL",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "banner_operation_items": {
+          "type": "array",
+          "title": "banner操作按钮",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "title": "图片标题",
+                "type": "string"
+              },
+              "image": {
+                "title": "图片URL",
+                "type": "string"
+              },
+              "link": {
+                "title": "链接URL",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "upgrade_shop_owner": {
+          "type": "string",
+          "title": "升级店主图片URL"
+        }
+      }
+    },
+    "class": {
+      "type": "object",
+      "title": "产品分类",
+      "properties": {
+        "top_class": {
+          "type": "object",
+          "title": "头部分类",
+          "properties": {
+            "class_id": {
+              "title": "分类id",
+              "type": "string"
+            },
+            "main_title": {
+              "title": "分类标题",
+              "type": "string"
+            },
+            "sub_title": {
+              "title": "分类说明",
+              "type": "string"
+            },
+            "icon": {
+              "title": "分类图标URL",
+              "type": "string"
+            }
+          }
+        },
+        "other_class": {
+          "title": "其他分类",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
