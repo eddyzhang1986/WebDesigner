@@ -23,7 +23,7 @@ export class Device extends React.Component {
         </Row>
         <Row>
           <Col md={12} xs={12} sm={12}>
-            <Editor onChange={() => {}} value={JSON.stringify(home, null, 2)} />;
+            <Editor onChange={() => {}} value={JSON.stringify(home, null, 2)} />
           </Col>
         </Row>
       </Grid>
