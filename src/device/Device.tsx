@@ -12,11 +12,12 @@ const home: any = require("../data/home.json");
 const REQUIRED_FIELD_SYMBOL = "*";
 
 const CustomTitleField = (props: any) => {
-  const { id, title, required, onClick } = props;
+  const { id, title, required, show, onClick } = props;
   const legend = required ? title + REQUIRED_FIELD_SYMBOL : title;
   return (
     <legend id={id} onClick={onClick} style={{ cursor: "pointer" }}>
       {legend}
+      {show ? "-" : "+"}
     </legend>
   );
 };
@@ -37,13 +38,13 @@ class ObjectFieldTemplate extends React.Component<any, any> {
       <fieldset>
         {(props.uiSchema["ui:title"] || props.title) && (
           <TitleField
+            show={this.state.show}
             onClick={(e: any) => {
               if (this.state.show) {
                 this.setState({ show: false });
               } else {
                 this.setState({ show: true });
               }
-              //alert("test");
             }}
             id={`${props.idSchema.$id}__title`}
             title={props.title || props.uiSchema["ui:title"]}
