@@ -140,41 +140,61 @@ function DefaultFixedArrayFieldTemplate(props: any) {
   );
 }
 
-function DefaultNormalArrayFieldTemplate(props: any) {
-  return (
-    <fieldset className={props.className}>
-      <ArrayFieldTitle
-        key={`array-field-title-${props.idSchema.$id}`}
-        TitleField={props.TitleField}
-        idSchema={props.idSchema}
-        title={props.uiSchema["ui:title"] || props.title}
-        required={props.required}
-      />
-      {(props.uiSchema["ui:description"] || props.schema.description) && (
-        <ArrayFieldDescription
-          key={`array-field-description-${props.idSchema.$id}`}
-          DescriptionField={props.DescriptionField}
+class DefaultNormalArrayFieldTemplate extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      show: true
+    };
+  }
+  render() {
+    const props = this.props;
+    return (
+      <fieldset className={props.className}>
+        <ArrayFieldTitle
+          key={`array-field-title-${props.idSchema.$id}`}
+          TitleField={props.TitleField}
           idSchema={props.idSchema}
-          description={
-            props.uiSchema["ui:description"] || props.schema.description
-          }
+          title={props.uiSchema["ui:title"] || props.title}
+          required={props.required}
+          show={this.state.show}
+          onClick={(e: any) => {
+            if (this.state.show) {
+              this.setState({ show: false });
+            } else {
+              this.setState({ show: true });
+            }
+          }}
         />
-      )}
-      <div
-        className="row array-item-list"
-        key={`array-item-list-${props.idSchema.$id}`}
-      >
-        {props.items && props.items.map((p: any) => DefaultArrayItem(p))}
-      </div>
-      {props.canAdd && (
-        <AddButton
-          onClick={props.onAddClick}
-          disabled={props.disabled || props.readonly}
-        />
-      )}
-    </fieldset>
-  );
+        {(props.uiSchema["ui:description"] || props.schema.description) && (
+          <ArrayFieldDescription
+            key={`array-field-description-${props.idSchema.$id}`}
+            DescriptionField={props.DescriptionField}
+            idSchema={props.idSchema}
+            description={
+              props.uiSchema["ui:description"] || props.schema.description
+            }
+          />
+        )}
+        <div style={{ display: this.state.show ? "block" : "none" }}>
+          <div
+            className="row array-item-list"
+            key={`array-item-list-${props.idSchema.$id}`}
+          >
+            {props.items && props.items.map((p: any) => DefaultArrayItem(p))}
+          </div>
+          {props.canAdd && (
+            <AddButton
+              onClick={props.onAddClick}
+              disabled={props.disabled || props.readonly}
+            />
+          )}
+        </div>
+      </fieldset>
+    );
+  }
 }
+
 const CustomTitleField = (props: any) => {
   const { id, title, required, show, onClick } = props;
   const legend = required ? title + REQUIRED_FIELD_SYMBOL : title;
@@ -187,13 +207,21 @@ const CustomTitleField = (props: any) => {
 };
 
 function ArrayFieldTitle(props: any) {
-  const { TitleField, idSchema, title, required } = props;
+  const { TitleField, idSchema, title, required, show, onClick } = props;
   if (!title) {
     // See #312: Ensure compatibility with old versions of React.
     return <div />;
   }
   const id = `${idSchema.$id}__title`;
-  return <TitleField id={id} title={title} required={required} />;
+  return (
+    <TitleField
+      id={id}
+      title={title}
+      required={required}
+      onClick={onClick}
+      show={show}
+    />
+  );
 }
 
 function ArrayFieldDescription(props: any) {
