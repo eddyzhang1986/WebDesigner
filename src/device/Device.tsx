@@ -143,9 +143,7 @@ function DefaultFixedArrayFieldTemplate(props: any) {
 class DefaultNormalArrayFieldTemplate extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = {
-      show: true
-    };
+    this.state = { show: true };
   }
   render() {
     const props = this.props;
@@ -237,9 +235,7 @@ function ArrayFieldDescription(props: any) {
 class ObjectFieldTemplate extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = {
-      show: true
-    };
+    this.state = { show: true };
   }
 
   render() {
