@@ -30,15 +30,15 @@ ul {
   height: 30px;
   line-height: 30px;
 }
-.rjsf .form-group {
+.rjsf fieldset {
   border-width: 1px;
   border-style: dotted;
   border-color: #53d9ef;
   padding: 8px;
 }
 
-.rjsf .field-string {
-  border-width: 0px;
+.rjsf fieldset legend {
+  width: auto;
 }
 
 .rjsf .array-item-add button {
