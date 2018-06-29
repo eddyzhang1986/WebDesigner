@@ -1,11 +1,70 @@
 import * as React from "react";
 import { IPhone } from "./iphone/iphone";
-import Form from "react-jsonschema-form";
 import { Grid, Row, Col } from "react-bootstrap";
 import { Editor } from "../components/editor";
+import F from "react-jsonschema-form";
+
+const Form: any = F;
 
 const schema = require("../data/form.json");
 const home: any = require("../data/home.json");
+
+const REQUIRED_FIELD_SYMBOL = "*";
+
+const CustomTitleField = (props: any) => {
+  const { id, title, required, onClick } = props;
+  const legend = required ? title + REQUIRED_FIELD_SYMBOL : title;
+  return (
+    <legend id={id} onClick={onClick} style={{ cursor: "pointer" }}>
+      {legend}
+    </legend>
+  );
+};
+
+class ObjectFieldTemplate extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      show: true
+    };
+  }
+
+  render() {
+    const props: any = this.props;
+    const { TitleField, DescriptionField } = props;
+
+    return (
+      <fieldset>
+        {(props.uiSchema["ui:title"] || props.title) && (
+          <TitleField
+            onClick={(e: any) => {
+              if (this.state.show) {
+                this.setState({ show: false });
+              } else {
+                this.setState({ show: true });
+              }
+              //alert("test");
+            }}
+            id={`${props.idSchema.$id}__title`}
+            title={props.title || props.uiSchema["ui:title"]}
+            required={props.required}
+            formContext={props.formContext}
+          />
+        )}
+        <div style={{ display: this.state.show ? "block" : "none" }}>
+          {props.description && (
+            <DescriptionField
+              id={`${props.idSchema.$id}__description`}
+              description={props.description}
+              formContext={props.formContext}
+            />
+          )}
+          {props.properties.map((prop: any) => prop.content)}
+        </div>
+      </fieldset>
+    );
+  }
+}
 
 export class Device extends React.Component<any, any> {
   constructor(props: any) {
@@ -13,6 +72,9 @@ export class Device extends React.Component<any, any> {
     this.state = { formData: home };
   }
   render() {
+    const fields = {
+      TitleField: CustomTitleField
+    };
     return (
       <Grid>
         <Row>
@@ -44,9 +106,11 @@ export class Device extends React.Component<any, any> {
           </Col>
           <Col md={8} xs={8} sm={8}>
             <Form
+              fields={fields}
+              ObjectFieldTemplate={ObjectFieldTemplate}
               schema={schema}
               formData={this.state.formData}
-              onChange={e => {
+              onChange={(e: any) => {
                 console.log(e);
                 this.setState({ formData: e.formData });
               }}
