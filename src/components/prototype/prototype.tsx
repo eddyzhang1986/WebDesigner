@@ -141,6 +141,127 @@ export class Prototype extends React.Component {
               />
             </Col>
           </Row>
+          <Row>
+            <Col
+              md={12}
+              xs={12}
+              sm={12}
+              style={{ paddingLeft: "25px", paddingRight: "25px" }}
+            >
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />{" "}
+              <Col
+                md={3}
+                xs={3}
+                sm={3}
+                style={{
+                  height: "87px",
+                  marginTop: "8px",
+                  backgroundImage: `url(${require("../../../resources/images/g1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "72px 87px",
+                  MozBackgroundSize: "72px 87px"
+                }}
+              />
+            </Col>
+          </Row>
         </Row>
         {/* 其他分类 */}
         <Row />
