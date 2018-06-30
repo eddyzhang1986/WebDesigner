@@ -24,11 +24,13 @@ export class Prototype extends React.Component {
             </Row>
             <Row
               style={{
-                position: "absolute",
-                top: "50px"
+                position: "relative",
+                top: "-200px"
               }}
             >
-              <Col md={3} xs={3} sm={3} />
+              <Col md={2} xs={2} sm={2}>
+                &nbsp;
+              </Col>
               <Col md={8} xs={8} sm={8}>
                 <div
                   style={{
@@ -42,7 +44,9 @@ export class Prototype extends React.Component {
                   &nbsp;
                 </div>
               </Col>
-              <Col md={1} xs={1} sm={1} />
+              <Col md={2} xs={2} sm={2}>
+                &nbsp;
+              </Col>
             </Row>
           </Row>
 
