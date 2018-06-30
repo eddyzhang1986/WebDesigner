@@ -16,36 +16,14 @@ export class Prototype extends React.Component {
           }}
         >
           {/* 轮播图片 */}
-          <Row
-            style={{
-              backgroundImage: `url(${require("../../../resources/images/swiper.png")})`,
-              height: "206px",
-              backgroundSize: "100% 100%",
-              MozBackgroundSize: "100% 100%",
-              margin: "0px auto"
-            }}
-          >
+          <Row>
             <Row>
+            
               <Col md={12} xs={12} sm={12}>
                 <Carousel />
               </Col>
+    
             </Row>
-            <Col md={2} xs={2} sm={2} />
-            {/* 文本框 */}
-            <Col md={9} xs={9} sm={9}>
-              <div
-                style={{
-                  width: "222px",
-                  height: "25px",
-                  backgroundImage: `url(${require("../../../resources/images/search.png")})`,
-                  backgroundSize: "100% 100%",
-                  MozBackgroundSize: "100% 100%"
-                }}
-              >
-                &nbsp;
-              </div>
-            </Col>
-            <Col md={1} xs={1} sm={1} />
           </Row>
           {/* 功能按钮 */}
           <Row>
