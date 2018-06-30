@@ -32,7 +32,8 @@
     "react-jsonschema-form": "^1.0.3",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-swipeable-views": "^0.12.14"
+    "react-swipeable-views": "^0.12.14",
+    "react-swipeable-views-utils": "^0.12.14"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.0",

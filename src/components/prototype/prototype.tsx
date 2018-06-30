@@ -15,14 +15,30 @@ export class Prototype extends React.Component {
             MozBackgroundSize: "100% 100%"
           }}
         >
-          {/* 轮播图片 */}
           <Row>
             <Row>
-            
+              <Col md={2} xs={2} sm={2} />
+              {/* 文本框 */}
+              <Col md={9} xs={9} sm={9}>
+                <div
+                  style={{
+                    width: "222px",
+                    height: "25px",
+                    backgroundImage: `url(${require("../../../resources/images/search.png")})`,
+                    backgroundSize: "100% 100%",
+                    MozBackgroundSize: "100% 100%"
+                  }}
+                >
+                  &nbsp;
+                </div>
+              </Col>
+              <Col md={1} xs={1} sm={1} />
+            </Row>
+            <Row>
+              {/* 轮播图片 */}
               <Col md={12} xs={12} sm={12}>
                 <Carousel />
               </Col>
-    
             </Row>
           </Row>
           {/* 功能按钮 */}
