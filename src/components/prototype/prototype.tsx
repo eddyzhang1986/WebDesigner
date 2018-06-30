@@ -17,9 +17,19 @@ export class Prototype extends React.Component {
         >
           <Row>
             <Row>
-              <Col md={2} xs={2} sm={2} />
-              {/* 文本框 */}
-              <Col md={9} xs={9} sm={9}>
+              {/* 轮播图片 */}
+              <Col md={12} xs={12} sm={12}>
+                <Carousel />
+              </Col>
+            </Row>
+            <Row
+              style={{
+                position: "absolute",
+                top: "50px"
+              }}
+            >
+              <Col md={3} xs={3} sm={3} />
+              <Col md={8} xs={8} sm={8}>
                 <div
                   style={{
                     width: "222px",
@@ -34,13 +44,8 @@ export class Prototype extends React.Component {
               </Col>
               <Col md={1} xs={1} sm={1} />
             </Row>
-            <Row>
-              {/* 轮播图片 */}
-              <Col md={12} xs={12} sm={12}>
-                <Carousel />
-              </Col>
-            </Row>
           </Row>
+
           {/* 功能按钮 */}
           <Row>
             <Col md={1} xs={1} sm={1} />
