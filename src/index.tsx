@@ -4,7 +4,7 @@ import { Device } from "./device/device";
 
 import { Navi } from "./components/navi/navi";
 
-
+import { Prototype } from "./components/prototype/Prototype";
 import "./global.css";
 import "./index.css";
 const ReactRouter = require("react-router-dom");
@@ -23,7 +23,12 @@ ReactDOM.render(
     <div>
       <Navi />
       <Route exact path="/" component={Home} />
-      <Route path="/prototype" component={(props:any)=>{<img width={320} src={require("../resources/homepage.jpg")} />}} />
+      <Route
+        path="/prototype"
+        component={(props: any) => {
+          return <Prototype />;
+        }}
+      />
     </div>
   </Router>,
   document.getElementById("container")
