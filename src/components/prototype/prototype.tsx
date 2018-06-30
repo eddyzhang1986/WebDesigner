@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
+import Carousel from "../carousel";
 
 export class Prototype extends React.Component {
   render() {
@@ -24,6 +25,11 @@ export class Prototype extends React.Component {
               margin: "0px auto"
             }}
           >
+            <Row>
+              <Col md={12} xs={12} sm={12}>
+                <Carousel />
+              </Col>
+            </Row>
             <Col md={2} xs={2} sm={2} />
             {/* 文本框 */}
             <Col md={9} xs={9} sm={9}>
