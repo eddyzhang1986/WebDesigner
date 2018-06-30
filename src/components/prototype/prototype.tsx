@@ -91,15 +91,57 @@ export class Prototype extends React.Component {
         {/* 分类直达 */}
         <Row
           style={{
-            backgroundImage: `url(${require("../../../resources/images/bg1.jpg")})`,
             minHeight: "386px",
             borderWidth: "0px",
-            backgroundColor: "#FDC7D5",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100% auto",
-            MozBackgroundSize: "100% auto"
+            backgroundColor: "#FDC7D5"
           }}
-        />
+        >
+          <Row>
+            <Col
+              md={12}
+              xs={12}
+              sm={12}
+              style={{
+                height: "45px",
+                backgroundImage: `url(${require("../../../resources/images/t1.png")})`,
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "320px 29px",
+                MozBackgroundSize: "320px 29px"
+              }}
+            />
+          </Row>
+          <Row>
+            <Col md={12} xs={12} sm={12}>
+              <Col
+                md={6}
+                xs={6}
+                sm={6}
+                style={{
+                  height: "64px",
+                  backgroundImage: `url(${require("../../../resources/images/c1.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "141px 64px",
+                  MozBackgroundSize: "141px 64px"
+                }}
+              />
+              <Col
+                md={6}
+                xs={6}
+                sm={6}
+                style={{
+                  height: "64px",
+                  backgroundImage: `url(${require("../../../resources/images/c2.png")})`,
+                  backgroundPosition: "center center",
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "141px 64px",
+                  MozBackgroundSize: "141px 64px"
+                }}
+              />
+            </Col>
+          </Row>
+        </Row>
         {/* 其他分类 */}
         <Row />
       </Grid>
