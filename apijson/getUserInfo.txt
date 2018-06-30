@@ -1,0 +1,5 @@
+GET
+
+https://sujiefs.com//api/userCenter/getUserInfo?openId=undefined&sign=65972653401dc1db2401e6a40756e83a&time=20180630162339
+
+{"code":0,"user":null}

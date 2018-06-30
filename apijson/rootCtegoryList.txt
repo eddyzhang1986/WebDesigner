@@ -1,0 +1,4 @@
+GET
+https://sujiefs.com//api/mall/rootCtegoryList?sign=f3fc63c5a839a6104ee018f667c93241&time=20180629173845
+
+{"reason":"","code":"0","list":[{"code":"004","name":"иорб","logo":"http://sujiefs.com/upload/images/20170819/201708191958392454606.jpg","id":"402880f75d78aa88015d7905a5500003"},{"code":"008","name":"©Цвс","logo":"","id":"2c9257a15de92f53015dea1c43280037"},{"code":"009","name":"х╧вс","logo":"http://sujiefs.com/upload/images/20170816/201708161632508062033.jpg","id":"2c9257a15de92f53015dea1e76d3003e"}]}

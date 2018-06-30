@@ -1,0 +1,5 @@
+GET
+
+https://sujiefs.com//api/userBrowse/add?goodsId=2c9257a16136c3d60162e1ad43754bca&openId=undefined&sign=65972653401dc1db2401e6a40756e83a&time=20180630162339
+
+{"result":"005","code":-1}

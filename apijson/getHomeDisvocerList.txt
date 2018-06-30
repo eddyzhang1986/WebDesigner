@@ -1,0 +1,120 @@
+GET
+https://sujiefs.com//api/mall/discoverList?page=1&size=10&sign=604eb9df234c2b263802c3a7f6f1243a&time=20180629172531
+
+{
+	"reason": "",
+	"code": "0",
+	"list": [
+		{
+			"code": "022",
+			"logo": "http://sujiefs.com/upload/images/20180322/201803221134300716543.jpg",
+			"id": "2c9257a16126d14701612b52808100d6",
+			"attrs": [
+				{
+					"attrValList": [
+						{
+							"attrName": "品牌",
+							"attrNameId": 213,
+							"attrVal": "素洁",
+							"id": 556
+						}
+					],
+					"attrName": {
+						"attrName": "品牌",
+						"categoryCode": "022",
+						"id": 213
+					}
+				},
+				{
+					"attrValList": [
+						{
+							"attrName": "年份季节",
+							"attrNameId": 214,
+							"attrVal": "2018春季新款",
+							"id": 557
+						}
+					],
+					"attrName": {
+						"attrName": "年份季节",
+						"categoryCode": "022",
+						"id": 214
+					}
+				}
+			]
+		},
+		{
+			"code": "021",
+			"logo": "http://sujiefs.com/upload/images/20180319/201803191401583397599.jpg",
+			"id": "2c9257a160e0cb1c0160ee3562e0024e",
+			"attrs": [
+				{
+					"attrValList": [
+						{
+							"attrName": "品牌",
+							"attrNameId": 211,
+							"attrVal": "素洁",
+							"id": 554
+						}
+					],
+					"attrName": {
+						"attrName": "品牌",
+						"categoryCode": "021",
+						"id": 211
+					}
+				},
+				{
+					"attrValList": [
+						{
+							"attrName": "年份季节",
+							"attrNameId": 212,
+							"attrVal": "2018全新升级版",
+							"id": 555
+						}
+					],
+					"attrName": {
+						"attrName": "年份季节",
+						"categoryCode": "021",
+						"id": 212
+					}
+				}
+			]
+		},
+		{
+			"code": "020",
+			"logo": "http://sujiefs.com/upload/images/20180308/201803081427506631167.jpg",
+			"id": "2c9257a15f37e4320160014d4dfc1650",
+			"attrs": [
+				{
+					"attrValList": [
+						{
+							"attrName": "品牌",
+							"attrNameId": 208,
+							"attrVal": "素洁",
+							"id": 551
+						}
+					],
+					"attrName": {
+						"attrName": "品牌",
+						"categoryCode": "020",
+						"id": 208
+					}
+				},
+				{
+					"attrValList": [
+						{
+							"attrName": "年份季节",
+							"attrNameId": 209,
+							"attrVal": "2017冬季",
+							"id": 552
+						}
+					],
+					"attrName": {
+						"attrName": "年份季节",
+						"categoryCode": "020",
+						"id": 209
+					}
+				}
+			]
+		}
+	]
+}

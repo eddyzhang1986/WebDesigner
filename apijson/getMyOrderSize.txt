@@ -1,0 +1,5 @@
+GET
+
+https://sujiefs.com//api/mall/goodsOrder/getMyOrderSize?openId=undefined&sign=33d1d548c71374f12da85f9e5aab27b2&time=20180630184547
+
+{"result":"005","pendingPayCount":0,"code":0,"backrdersCount":0,"shippedCount":0}

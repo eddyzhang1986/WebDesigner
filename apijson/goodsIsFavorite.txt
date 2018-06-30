@@ -1,0 +1,6 @@
+GET
+
+https://sujiefs.com//api/mall/goodsFavorite/goodsIsFavorite?openId=undefined&goodsId=2c9257a16136c3d60162e1ad43754bca&sign=65972653401dc1db2401e6a40756e83a&time=20180630162339
+
+
+{"reason":null,"code":-1,"isFavorite":0}
