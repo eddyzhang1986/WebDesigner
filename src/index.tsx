@@ -1,10 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Device } from "./device/device";
-import { Editor } from "./components/editor";
-import { Navi } from "./components/navi/navi";
-import { Prototype } from "./components/prototype/Prototype";
 
+import { Navi } from "./components/navi/navi";
+
+import { Prototype } from "./components/prototype/Prototype";
 import "./global.css";
 import "./index.css";
 const ReactRouter = require("react-router-dom");
@@ -23,7 +23,12 @@ ReactDOM.render(
     <div>
       <Navi />
       <Route exact path="/" component={Home} />
-      <Route path="/prototype" component={Prototype} />
+      <Route
+        path="/prototype"
+        component={(props: any) => {
+          return <Prototype />;
+        }}
+      />
     </div>
   </Router>,
   document.getElementById("container")

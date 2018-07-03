@@ -2,7 +2,7 @@ import * as React from "react";
 import { IPhone } from "./iphone/iphone";
 import { Grid, Row, Col } from "react-bootstrap";
 import { Editor } from "../components/editor";
-
+import { Prototype } from "../components/prototype/Prototype";
 import F from "react-jsonschema-form";
 
 const Form: any = F;
@@ -51,7 +51,7 @@ export class Device extends React.Component<any, any> {
         <Row>
           <Col md={4} xs={4} sm={4}>
             <IPhone>
-              <img width={320} src={require("../../resources/homepage.jpg")} />
+              <Prototype />
             </IPhone>
           </Col>
           <Col md={8} xs={8} sm={8}>
